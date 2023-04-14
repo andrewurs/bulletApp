@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Text to Bullet List Converter</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dashes List Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <div class="container">
-      <h1>Text to Bullet List Converter</h1>
-      <textarea id="input" placeholder="Enter text here"></textarea>
-      <button id="convertBtn">Convert to Bullet List</button>
-      <ul id="output"></ul>
-    </div>
+    <h1>Dashes List Converter</h1>
+    <p>Enter your text below:</p>
+    <textarea id="input-text"></textarea>
+    <br>
+    <button onclick="convert()">Convert to Dashes List</button>
+    <br>
+    <p>Result:</p>
+    <div id="output-list"></div>
+
     <script src="script.js"></script>
   </body>
 </html>

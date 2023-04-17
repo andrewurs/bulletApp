@@ -10,4 +10,15 @@ function convert() {
   document.getElementById("output-list").innerHTML = output;
 }
 
+function copyToClipboard() {
+  var output = document.getElementById("output-list").innerText;
+  var textarea = document.createElement("textarea");
+  textarea.value = output;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  document.body.removeChild(textarea);
+}
+
+
 

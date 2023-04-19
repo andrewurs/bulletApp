@@ -18,6 +18,11 @@ function copyToClipboard() {
   textarea.select();
   document.execCommand("copy");
   document.body.removeChild(textarea);
+  var copyButton = document.getElementById("copy-button");
+  copyButton.innerHTML = "Copied!";
+  setTimeout(function() {
+    copyButton.innerHTML = "Copy to Clipboard";
+  }, 1000);
 }
 
 function clearInput() {

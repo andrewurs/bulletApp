@@ -3,7 +3,6 @@
   <head>
     <title>Dashes List Converter</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="shortcut icon" href="/bulletApp/icons8-dash-64.png" type="image/png">
   </head>
   <body>
     <h1>Dashes List Converter</h1>
@@ -11,9 +10,10 @@
     <textarea id="input-text"></textarea>
     <br>
     <button onclick="convert()">Convert to Dashes List</button>
+    <button onclick="clearInput()">Clear</button>
     <br>
     <p>Result:</p>
-    <div class="output" id="output-list"></div>
+    <div id="output-list"></div>
     <button onclick="copyToClipboard()">Copy to Clipboard</button>
 
     <script src="script.js"></script>

@@ -20,5 +20,10 @@ function copyToClipboard() {
   document.body.removeChild(textarea);
 }
 
+function clearInput() {
+  document.getElementById("input-text").value = "";
+  document.getElementById("output-list").innerHTML = "";
+}
+
 
 
